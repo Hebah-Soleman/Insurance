@@ -31,6 +31,3 @@ region = st.selectbox("Region", ["southwest", "southeast", "northwest", "northea
 if st.button("Predict Charges"):
     result = predict_charges(age, sex, bmi, children, smoker, region)
     st.write(f"The predicted insurance charge is ${result:.2f}")
-
-if __name__ == "__main__":
-    st.run()
